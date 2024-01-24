@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+
+
 def search_replace(my_list, search, replace):
-    new = my_list.copy()
-    return [replace if item == search else item for item in new]
+    """
+    replaces all occurances of search with replace
+    """
+
+    return ([ele if ele != search else replace for ele in my_list])
